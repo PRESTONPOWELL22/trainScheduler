@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <title>Train Schedule</title>
+</head>
+<body>
+    <!-- Jumbotron Header -->
+    <div class="jumbotron text-center">
+        <div class="container">
+          <h1 class="display-3">Train Schedule</h1>
+          <p class="lead">If you still manage to miss your train suicide might be a viable option.</p>
+        </div>
+    </div>
+
+    <div class="container">
+      <div class="panel panel-default">
+        <div class="panel-heading">Add Train</div>
+        <div class="panel-body">
+            <form>
+                <!-- train name #train -->
+                <div class="form-group">
+                    <label for="trainName">Train Name:</label>
+                    <input class="form-control" id="train">
+                </div>
+                <!-- Destination #dest -->
+                <div class="form-group">
+                    <label for="trainName">Destination:</label>
+                    <input class="form-control" id="dest">
+                </div>
+                <!-- First Train #frst -->
+                <div class="form-group">
+                    <label for="trainName">First Train Time (HH:mm - military time):</label>
+                    <input class="form-control" id="frst">
+                </div>
+                <!-- frequency #freq -->
+                <div class="form-group">
+                    <label for="freq">Frequency (mins):</label>
+                    <input class="form-control" id="freq">
+                </div>
+                <!-- submit #sbmt-->
+                <button type="submit" class="btn btn-default" id="sbmt">Submit</button 
+
+
+            </form>
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+
+
+
+    <div class="container">
+      <div class="panel panel-default">
+        <div class="panel-heading">Train Schedule</div>  
+        <div class="panel-body">       
+            <table class="table">
+              <thead>
+                <tr>
+                    <th>Train Name</th>
+                    <th>Destination</th>
+                    <th>Frequency (mins)</th>
+                    <th>Next Arrival</th>
+                    <th>Minutes Away</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Sample</td>
+                    <td>New York</td>
+                    <td>15</td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+    <script src="/assets/javascript/logic.js"></script>
+      
+</body>
+</html>
