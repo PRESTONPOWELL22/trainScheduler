@@ -1,0 +1,24 @@
+.panel {
+    background-color: darkcyan;
+    padding: 5px;
+    border-radius: 10px;
+    color: whitesmoke;
+}
+
+.panel-heading {
+    background-color: darkblue;
+    color: white;
+}
+
+.jumbotron {
+    background-color: darkblue;
+    color: white;
+    border-radius: 10px;
+}
+
+
+
+.form-control {
+    color: green;
+    background-color: green;
+}

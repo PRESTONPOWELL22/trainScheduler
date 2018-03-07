@@ -13,7 +13,8 @@
     <div class="jumbotron text-center">
         <div class="container">
           <h1 class="display-3">Train Schedule</h1>
-          <p class="lead">If you still manage to miss your train suicide might be a viable option.</p>
+          <p class="lead">I styled it this way so it would look as dumb as it is!</p>
+          <hr style="color:#919090; background-color:brown; height:27px; border:none;">
         </div>
     </div>
 
@@ -44,7 +45,7 @@
                     <input class="form-control" id="freq">
                 </div>
                 <!-- submit #sbmt-->
-                <button type="submit" class="btn btn-default" id="sbmt">Submit</button 
+                <button type="submit" class="btn btn-danger flno" id="sbmt">Submit</button> 
             </form>
         </div>
       </div>
@@ -54,34 +55,13 @@
 
 
 
-    <div class="container">
-      <div class="panel panel-default">
-        <div class="panel-heading">Train Schedule</div>  
-        <div class="panel-body">       
-            <table class="table">
-              <thead>
-                <tr>
-                    <th>Train Name</th>
-                    <th>Destination</th>
-                    <th>Frequency (mins)</th>
-                    <th>Next Arrival</th>
-                    <th>Minutes Away</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Sample</td>
-                    <td>New York</td>
-                    <td>15</td>
-                  </tr>
-                </tbody>
-            </table>
-        </div>
-      </div>
-    </div>
+    
 
     <!-- firebase -->
     <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+
+    <!-- moment.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/locale/af.js"></script>
     
     <!-- jQuery -->
     <script
